@@ -1,15 +1,16 @@
-World Layoffs Data Cleaning Project
-Project Overview
+WORLD LAYOFFS DATA CLEANING PROJECT
+
+PROJECT OVERVIEW
 
 This project involves a comprehensive data cleaning process of a raw layoffs dataset using MySQL. The goal was to transform messy, unformatted data into a structured format ready for exploratory data analysis (EDA).
 
-Dataset
+DATASET
   
   Source: Kaggle World Layoffs Dataset
   
   Description: Contains information on company layoffs, including location, industry, total laid off, and funding stage.
 
-Steps Taken
+STEPS TAKEN
 
   Deduplication: Identified and removed duplicate records using ROW_NUMBER() and CTEs.
   
@@ -21,13 +22,13 @@ Steps Taken
   
   Schema Refinement: Dropped redundant columns and rows with unusable null data to streamline the dataset.
 
-Tools Used
+TOOLS USED
 
 MySQL Workbench: For writing and executing cleaning scripts.
 
 GitHub: For version control and documentation.
 
-How to Use
+HOW TO USE
 
 Import the raw_table_layoffs.csv into your MySQL environment.
 
