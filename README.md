@@ -1,8 +1,8 @@
-WORLD LAYOFFS DATA CLEANING PROJECT
+WORLD LAYOFFS: DATA CLEANING AND EXPLORATORY ANALYSIS PROJECT
 
 PROJECT OVERVIEW
 
-This project involves a comprehensive data cleaning process of a raw layoffs dataset using MySQL. The goal was to transform messy, unformatted data into a structured format ready for exploratory data analysis (EDA).
+This project is a comprehensive SQL-based study of global layoffs. It covers the entire data lifecycle from raw data ingestion to cleaning and final insight generation.
 
 DATASET
   
@@ -10,26 +10,32 @@ DATASET
   
   Description: Contains information on company layoffs, including location, industry, total laid off, and funding stage.
 
-STEPS TAKEN
+PROJECT STRUCTURE
 
-  Deduplication: Identified and removed duplicate records using ROW_NUMBER() and CTEs.
+  * raw_table_layoffs.csv : The raw dataset
+
+  * world_layoffs_cleaning_project.sql : My script for removing duplicates, standardizing data and handling nulls.
+
+  * world_layoffs_analysis.sql : The exploratory analysis script.
   
-  Standardization:
-      Fixed inconsistent naming (e.g., merging "Crypto", "CryptoCurrency", and "Crypto Currency").
-      Standardized date formats from strings to DATE types.
-      
-  Null Value Handling: Populated missing values for "Industry" by joining the table with itself where data was available in                         other rows.
-  
-  Schema Refinement: Dropped redundant columns and rows with unusable null data to streamline the dataset.
+KEY SQL TECHNIQUES USED
+
+  -- CTEs & Window Functions : Used for identifying duplicates and ranking layoffs by year.
+
+  -- Aggregations : Calculated rolling totals and funding-to-layoff-ratios.
+
+  -- Data Standardization : Cleaned inconsistent industry naming.
+
+TOP FINDINGS
+
+   1. The Funding Paradox : Companies with over $1B in funding (Post-IPO) still saw massive layoffs, proving that capital doesn't always equal job security
+
+   2. Industry Hits : The Retail and Consumer industries were hit hardest overall during the analysed period.
 
 TOOLS USED
 
-MySQL Workbench: For writing and executing cleaning scripts.
+MySQL Workbench: For writing and executing scripts.
 
 GitHub: For version control and documentation.
 
-HOW TO USE
 
-Import the raw_table_layoffs.csv into your MySQL environment.
-
-Run the world_layoffs_cleaning_project.sql script to perform the transformations.
