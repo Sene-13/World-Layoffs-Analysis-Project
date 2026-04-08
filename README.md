@@ -28,14 +28,21 @@ KEY SQL TECHNIQUES USED
 
 TOP FINDINGS
 
-   1. The Funding Paradox : Companies with over $1B in funding (Post-IPO) still saw massive layoffs, proving that capital doesn't always equal job security
+   1. The Funding Paradox : Companies with over $1B in funding (Post-IPO) still saw massive layoffs, proving that capital doesn't always equal job security.
 
    2. Industry Hits : The Retail and Consumer industries were hit hardest overall during the analysed period.
+      
 
 TOOLS USED
 
 MySQL Workbench: For writing and executing scripts.
 
 GitHub: For version control and documentation.
+
+HOW TO REPLICATE
+
+1. Load the raw_table_layoffs.csv into your MySQL environment.
+2. Run the world_layoffs_cleaning_project.sql script to prepare the data.
+3. Run world_layoffs_analysis.sql to view the final insights.
 
 
