@@ -43,7 +43,7 @@ MySQL Workbench: For writing and executing scripts.
 
 GitHub: For version control and documentation.
 
-## HOW TO REPLICATE
+### HOW TO REPLICATE
 
 1. Load the raw_table_layoffs.csv into your MySQL environment.
 2. Run the world_layoffs_cleaning_project.sql script to prepare the data.
